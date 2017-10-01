@@ -1,0 +1,136 @@
+body {
+	cursor: default;
+	background-color: rgb(24,24,24);
+	color: white;
+	font-family: 'Montserrat', sans-serif;
+}
+
+body::scrollbar {
+	display: none;
+}
+
+body::-webkit-scrollbar {
+    display: none;
+}
+
+canvas {
+	position: fixed;
+}
+
+@keyframes jiggle {
+	0% {transform: rotate(0deg);}
+	25% {transform: rotate(6deg);}
+	75% {transform: rotate(-6deg);}
+}
+
+.centered-block {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+#login, #loggedin {
+	display: none;
+}
+
+.text-overflow {
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	width: 500px;
+}
+
+#spotify-button {
+	background-color: rgb(94,175,101);
+	color: white;
+}
+
+#spotify-button:hover {
+	color: black;
+}
+
+#playlists {
+	text-align: center;
+	position: absolute;
+	margin: auto;
+	top: 20px;
+	width: 100%;
+	display: none;
+	padding-top: 80px;
+}
+
+#particles-js {
+	height: 100vh;
+}
+
+.album-art {
+	object-fit: cover;
+	border-radius: 50%;
+	width: 200px;
+	height: 200px;
+	margin: 10px;
+	border: solid white 1px;
+	transition: 0.7s;
+}
+
+.album-art:hover {
+	filter: brightness(160%);
+	cursor: pointer;
+}
+
+.track-art {
+	object-fit: cover;
+	border-radius: 50%;
+	width: 200px;
+	height: 200px;
+	margin: 10px;
+	border: solid white 1px;
+	transition: 0.7s;
+}
+
+.track-art:hover {
+	filter: brightness(160%);
+	cursor: pointer;
+}
+
+#tracks {
+	text-align: center;
+	position: absolute;
+	margin: auto;
+	top: 20px;
+	width: 100%;
+	display: none;
+	padding-top: 80px;
+}
+
+#marquee {
+	width: 75%;
+	background-color: rgb(200,200,200);
+	color: rgb(24,24,24); 
+	position: absolute;
+	top: 30px;
+	left: 50%;
+	transform: translateX(-50%);
+	padding: 10px;
+	text-align: center;
+	display: none;
+}
+
+#back {
+	background-color: rgb(200,200,200);
+	color: rgb(24,24,24); 
+	position: absolute;
+	top: 10px;
+	left: 20px;
+	border-radius: 0px;
+	padding: 9px;
+}
+
+#mobile {
+	display: none;
+}
+
+#audio {
+	display: none;
+}
